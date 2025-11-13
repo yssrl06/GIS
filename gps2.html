@@ -59,9 +59,9 @@
 
         client.on('connect', () => {
             console.log('Connected to MQTT broker');
-            client.subscribe('car/gps', (err) => { //<<<<<<<<UBAH TOPIK INI 'car/gps'
+            client.subscribe('mobil', (err) => { //<<<<<<<<UBAH TOPIK INI 'car/gps'
                 if (!err) {
-                    console.log('Subscribed to car/gps topic');
+                    console.log('Subscribed to mobil topic');
                 }
             });
         });
